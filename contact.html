@@ -22,6 +22,7 @@
   <hr>
   
   <main>
+   
     <h2>How can you reach SALAM Spare Parts?</h2>
     <p>You can call our customer support desk directly at +251-911-000-000 or send an email to info@salamspareparts.com.</p>
 
@@ -33,37 +34,51 @@
 
     <h3>Need help checking if a specific part is in stock?</h3>
     <p>Fill out the form below with your details and required spare part, and our team will respond honestly and immediately.</p>
+   
 
-    <form action="#" method="post">
+    <form action="home.html" method="post">
       <p>
         <label for="name">Full Name:</label><br>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="name" name="name" required placeholder="Your Full Name">
       </p>
 
       <p>
         <label for="phone">Phone Number:</label><br>
-        <input type="tel" id="phone" name="phone" required>
+        <input type="tel" id="phone" name="phone" required placeholder="+251-911-000-000">
       </p>
 
       <p>
         <label for="email">Email Address:</label><br>
-        <input type="email" id="email" name="email">
+        <input type="email" id="email" name="email" placeholder="your.email@example.com">
       </p>
 
-      <p>
-        <label for="part">Spare Part Needed (Appliance Brand & Model):</label><br>
-        <input type="text" id="part" name="part" required>
-      </p>
+      
+<label for="service">Select Spare Part Category:</label><br>
 
-      <p>
+<select id="service" name="SparePart">
+    <option value="Engine Parts">Engine Parts</option>
+    <option value="Brake Parts">Brake System Parts</option>
+    <option value="Transmission">Transmission & Gearbox Parts</option>
+    <option value="Suspension">Suspension & Steering Parts</option>
+    <option value="Electrical">Electrical & Lighting Parts</option>
+    <option value="Body Parts">Car Body & Exterior Parts</option>
+    <option value="Filters">Oil, Air & Fuel Filters</option>
+    <option value="Lubricants">Engine Oil & Lubricants</option>
+    <option value="Accessories">Car Accessories</option>
+    <option value="Other">Other Spare Parts</option>
+</select><br>
+<p>
         <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="4" cols="35"  required></textarea>
+        <textarea id="message" name="message" rows="4" cols="35" required placeholder="fill this area if you have a comment..."></textarea>
       </p>
 
       <p>
         <button type="submit">Send Message</button>
+        <button type="reset">Clear Form</button>
       </p>
+
     </form>
+   
   </main>
 
 </body>
